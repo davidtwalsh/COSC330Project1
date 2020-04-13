@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".VocabularyActivity">
+
+    <TextView
+        android:id="@+id/vocabWord"
+        android:layout_width="342dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Primary Care Center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vocabPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/appointment_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/vocabChoice1Btn"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="userSelectsChoice"
+        android:text="Choice 1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vocabPicture" />
+
+    <Button
+        android:id="@+id/vocabChoice2Btn"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="userSelectsChoice"
+        android:text="Choice 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vocabChoice1Btn" />
+
+    <Button
+        android:id="@+id/vocabChoice3Btn"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="userSelectsChoice"
+        android:text="Choice 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vocabChoice2Btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".ContentsActivity">
+
+    <Button
+        android:id="@+id/titleFourButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterTitleFour"
+        android:text="Picture Story"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleThreeButton" />
+
+    <Button
+        android:id="@+id/titleFiveButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterTitleFive"
+        android:text="Reading/Speaking"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFourButton" />
+
+    <Button
+        android:id="@+id/titleTwoButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterTitleTwo"
+        android:text="Puzzles"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleOneButton" />
+
+    <Button
+        android:id="@+id/titleThreeButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterTitleThree"
+        android:text="Parts Match"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTwoButton" />
+
+    <Button
+        android:id="@+id/titleOneButton"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterTitleOne"
+        android:text="Wellness Vocabulary"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

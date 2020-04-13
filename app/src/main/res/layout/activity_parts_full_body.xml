@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".PartsFullBody">
+
+    <ImageView
+        android:id="@+id/fbArmArrow"
+        android:layout_width="107dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="360dp"
+        android:rotation="-30"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbHandButton"
+        android:layout_width="54dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="292dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealHand"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbArmButton"
+        android:layout_width="61dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="360dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealArm"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbBody"
+        android:layout_width="291dp"
+        android:layout_height="639dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:src="@drawable/body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbFootArrow"
+        android:layout_width="151dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbHeadArrow"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbShoulderArrow"
+        android:layout_width="151dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="488dp"
+        android:rotation="10"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbChestArrow"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="492dp"
+        android:rotation="135"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbStomachArrow"
+        android:layout_width="167dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="412dp"
+        android:rotation="20"
+        android:scaleX="1.5"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fbHandArrow"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="268dp"
+        android:rotation="-45"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbFootText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Feet"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fbFootArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbHeadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Head"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fbHeadArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbShoulderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Shoulder"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fbShoulderArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbFootButton"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealFoot"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbStomachButton"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="368dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealStomach"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbChestButton"
+        android:layout_width="81dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="448dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealChest"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbHeadButton"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginBottom="544dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealHead"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbShoulderButton"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="492dp"
+        android:background="#00FFFFFF"
+        android:onClick="revealShoulder"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbHandText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Hand"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fbHandArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbArmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="Arm"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fbArmArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbStomachText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="Stomach/Abdomin"
+        android:textColor="#FA7C26"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fbStomachArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fbChestText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="32dp"
+        android:text="Chest"
+        android:textColor="#FA7C26"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fbChestArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

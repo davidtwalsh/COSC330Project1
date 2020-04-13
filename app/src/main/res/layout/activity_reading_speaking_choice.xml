@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".ReadingSpeakingChoice">
+
+    <Button
+        android:id="@+id/rs_but1"
+        android:layout_width="266dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterSpeakingChoice"
+        android:text="Speaking"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs_title" />
+
+    <Button
+        android:id="@+id/rs_but2"
+        android:layout_width="266dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3D3D3D"
+        android:onClick="enterReadingChoice"
+        android:text="Reading"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs_but1" />
+
+    <TextView
+        android:id="@+id/rs_title"
+        android:layout_width="0dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Choose Exercise Type"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".PartsHead">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/head_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hNeckArrow"
+        android:layout_width="199dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="104dp"
+        android:rotation="-30"
+        android:rotationX="0"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hEyeArrow"
+        android:layout_width="199dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="404dp"
+        android:rotation="60"
+        android:rotationX="0"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hMouthArrow"
+        android:layout_width="159dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="236dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hNoseArrow"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="295dp"
+        android:rotation="180"
+        android:rotationX="0"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hEarArrow"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="416dp"
+        android:rotation="90"
+        android:rotationX="0"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hNeckText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Neck"
+        android:textColor="#FF801A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hNeckArrow" />
+
+    <TextView
+        android:id="@+id/hMouthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mouth"
+        android:textColor="#FF801A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/hMouthArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hEarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginBottom="36dp"
+        android:text="Ear"
+        android:textColor="#FF801A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/hEarArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hEyeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="Eye"
+        android:textColor="#FF801A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/hEyeArrow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hNoseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:text="Nose"
+        android:textColor="#FF801A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hNoseArrow" />
+
+    <Button
+        android:id="@+id/hNeckButton"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="180dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="revealNeck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hMouthButton"
+        android:layout_width="76dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="252dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="revealMouth"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hNoseButton"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="300dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="revealNoise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hEyesButton"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="340dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="revealEye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hEarsButton"
+        android:layout_width="46dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="328dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="revealEar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
